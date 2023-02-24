@@ -19,7 +19,7 @@ public class BookResponse {
     private boolean status;
     private String deactivationDate;
     private String deactivationDescription;
-    private DeactivationReason deactivationReason;
+    private DeactivationReasonResponse deactivationReasonResponse;
 
     public int getId() {return id;}
 
@@ -70,7 +70,7 @@ public class BookResponse {
 
     public void setDeactivationDescription(String deactivationDescription) {this.deactivationDescription = deactivationDescription;}
 
-    public DeactivationReason getDeactivationReason() {return deactivationReason;}
+    public DeactivationReasonResponse getDeactivationReasonResponse() {return deactivationReasonResponse;}
 
-    public void setDeactivationReason(DeactivationReason deactivationReason) {this.deactivationReason = deactivationReason;}
+    public void setDeactivationReasonResponse(DeactivationReasonResponse deactivationReasonResponse) {this.deactivationReasonResponse = deactivationReasonResponse;}
 }
