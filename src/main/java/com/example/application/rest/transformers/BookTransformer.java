@@ -6,6 +6,7 @@ import com.example.application.rest.response.BookResponse;
 import com.example.application.rest.response.DeactivationReasonResponse;
 
 import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class BookTransformer {
 
@@ -35,6 +36,14 @@ public class BookTransformer {
 
     public Book book(BookRequest bookRequest){
         Book book = new Book();
+        book.setAmount(bookRequest.getAmount());
+        book.setTitle(bookRequest.getTitle());
+        book.setIsbn(bookRequest.getIsbn());
+        book.setYear(bookRequest.getYear());
+        book.setPublisher(bookRequest.getPublisher());
+        book.setLanguage(bookRequest.getLanguage());
+        book.setStatus(true);
+        book.setDateAdded(new Date());
 
         return book;
     }
