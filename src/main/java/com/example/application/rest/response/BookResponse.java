@@ -1,7 +1,6 @@
 package com.example.application.rest.response;
 
 import com.example.application.data.entities.Author;
-import com.example.application.data.entities.DeactivationReason;
 import com.example.application.data.entities.Genre;
 import java.util.List;
 
